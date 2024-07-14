@@ -205,7 +205,7 @@ form button[type='button'] {
 }
 
 nav {
-  background-color: #333;
+  background-color: #5d62ff ;
   color: white;
   padding: 1rem;
 }
@@ -258,6 +258,12 @@ ul {
 }
 
 ul li {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.inv-ul {
   margin: 1rem 0;
   padding: 1rem;
   border: 1px solid #ccc;

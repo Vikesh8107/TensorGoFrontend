@@ -1,11 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Image from '../assets/image.png';
-import Logo from '../assets/logo.png';
-import GoogleSvg from '../assets/icons8-google.svg';
-import { FaEye, FaEyeSlash } from 'react-icons/fa6';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Image from "../assets/image.png";
+import Logo from "../assets/logo.png";
+import GoogleSvg from "../assets/icons8-google.svg";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -17,12 +16,12 @@ const Login: React.FC = () => {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       const userEmail = user?.email;
-      const userName = userEmail?.split('@')[0];
-      
+      const userName = userEmail?.split("@")[0];
+
       // Redirect to Welcome page after successful login
-      navigate('/welcome', { state: { userName } });
+      navigate("/welcome", { state: { userName } });
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error("Login failed:", error);
     }
   };
 
@@ -45,7 +44,7 @@ const Login: React.FC = () => {
               <input type="email" placeholder="Email" />
               <div className="pass-input-div">
                 <input
-                  type={showPassword ? 'text' : 'password'}
+                  type={showPassword ? "text" : "password"}
                   placeholder="Password"
                 />
                 {showPassword ? (
@@ -75,18 +74,15 @@ const Login: React.FC = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Log In</button>
-                <button type="button" onClick={handleLogin}>
+                <button type="button">Sign In</button>
+
+                <button type="button" onClick={handleLogin} style={{ color: 'black' }}>
                   <img src={GoogleSvg} alt="" />
-                  Log In with Google
+                  Sign In with Google
                 </button>
               </div>
             </form>
           </div>
-
-          <p className="login-bottom-p">
-            Don't have an account? <Link to="/signup">SignUp</Link>
-          </p>
         </div>
       </div>
     </div>

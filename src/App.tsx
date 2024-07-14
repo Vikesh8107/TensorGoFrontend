@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-
-import Navbar from './components/Navbar';
 import Dashboard from './Pages/Dashboard';
 import Home from './Pages/Home';
 import Login from './components/Login';
@@ -28,7 +26,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
