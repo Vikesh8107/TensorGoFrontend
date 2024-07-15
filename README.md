@@ -143,6 +143,8 @@ Follow the prompts to configure your project for deployment.
 
 ## Here is the demo pdf downloaded by the System 
 
+[View demopdf](./public/invoice_6)
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
