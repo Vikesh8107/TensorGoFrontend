@@ -143,7 +143,7 @@ Follow the prompts to configure your project for deployment.
 
 ## Here is the demo pdf downloaded by the System 
 
-[View demopdf](./public/invoice_6)
+[View demopdf](public/invoice_6)
 
 ## Contributing
 
