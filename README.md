@@ -141,9 +141,9 @@ The build output will be in the `dist` directory. You can then serve this direct
 Follow the prompts to configure your project for deployment.
 
 
-## Here is the demo pdf downloaded by the System 
+## Here is the demo pdf downloaded from the System 
 
-[View demopdf](public/invoice_6.pdf)
+[View demopdf](./public/invoice_6.pdf)
 
 ## Contributing
 
